@@ -1,0 +1,113 @@
+@charset "utf-8";
+
+body{
+    margin: 0;
+    background: #0779ad;
+}
+
+h1{
+    text-align: center;
+    font-family: cursive;
+    font-size: 50px;
+    font-family: 'Ribeye', serif;
+    margin-top: 80px;
+    color: aliceblue;
+}
+
+.container{
+position: relative;
+width: 320px;
+margin: 100px auto 0 auto;
+perspective: 900px;
+color: #ffffff
+}
+
+.carrossel{
+position: absolute;
+width: 100%;
+height: 100%;
+transform-style: preserve-3d;
+animation: rotate360 70s infinite forwards linear;
+}
+
+.imagem{
+    position: absolute;
+    width: 290px;
+    height: 187px;
+    top: 40px;
+    left: 10px;
+    right: 10px;
+    background-size: cover;
+    display: flex;
+}
+
+.imagem span{
+    margin: auto;
+    font-size: 1.2em;
+}
+
+@keyframes rotate360 {
+    
+from{
+transform: rotateY(0deg);
+}
+
+to{
+transform: rotateY(-360deg);
+}
+
+}
+
+.imagem:nth-child(1){
+    background-image: url(https://rollingstone.uol.com.br/media/_versions/a_viagem_de_chihiro_foto_divulgacao_studio_ghibli_widelg.jpg);
+    transform: rotateY(0deg) translateZ(430px);
+}
+
+.imagem:nth-child(2){
+    background-image: url(https://festivalkontoret.s3.eu-central-1.amazonaws.com/filmbilder/2022/_articleFullWidth/Min_Nabo_Totoro.webp);
+    transform: rotateY(40deg) translateZ(430px);
+}
+
+.imagem:nth-child(3){
+    background-image: url(https://pbs.twimg.com/media/EYt-oHwXYAEnT-i.jpg:large);
+    transform: rotateY(80deg) translateZ(430px);
+}
+
+.imagem:nth-child(4){
+    background-image: url(https://teoriageek.com.br/wp-content/uploads/2020/05/mononoke-capa.jpg);
+    transform: rotateY(120deg) translateZ(430px);
+}
+
+.imagem:nth-child(5){
+    background-image: url(https://i0.wp.com/studioghibli.com.br/wp-content/uploads/2020/04/Ponyo-e-Sosuke.jpg?resize=1000%2C620&ssl=1);
+    transform: rotateY(160deg) translateZ(430px);
+}
+
+.imagem:nth-child(6){
+    background-image: url(https://3.bp.blogspot.com/-nHMojhc9gP4/WV5kbt-idhI/AAAAAAAAG_4/qr1zxukV_y04aWJD7qEr2aDEF2R-cNn6wCLcBGAs/s1600/OReinoGatos.png);
+    transform: rotateY(200deg) translateZ(430px);
+}
+
+.imagem:nth-child(7){
+    background-image: url(https://www.planocritico.com/wp-content/uploads/2021/04/o_castelo_encantado_plano_critico.jpg);
+    transform: rotateY(240deg) translateZ(430px);
+}
+
+.imagem:nth-child(8){
+    background-image: url(https://cdn.olivre.com.br/wp-content/uploads/2018/04/Tumulo-dos-Vagalumes.jpg);
+    transform: rotateY(280deg) translateZ(430px);
+}
+
+.imagem:nth-child(9){
+    background-image: url(https://studioghibli.com.br/wp-content/uploads/2020/04/Porco-Rosso-1024x555.jpg);
+    transform: rotateY(320deg) translateZ(430px);
+}
+
+footer{
+   position: absolute; 
+margin-top: 100vh;
+transform: translate(-50%);
+margin-left: 50%;
+text-align: center;
+color: aliceblue;
+}
